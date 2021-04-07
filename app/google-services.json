@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267715378699",
+    "project_id": "gymto-bffdb",
+    "storage_bucket": "gymto-bffdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267715378699:android:5e14009eb97ccdd3f9d10e",
+        "android_client_info": {
+          "package_name": "com.example.gtg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267715378699-olv50ivmjti2td8crret5v89u6lanad1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNz2rRiOLHN7nGc535vs4h9dNWUrplWKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267715378699-olv50ivmjti2td8crret5v89u6lanad1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
