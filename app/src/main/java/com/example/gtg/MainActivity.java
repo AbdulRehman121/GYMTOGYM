@@ -54,10 +54,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (task.isSuccessful())
             {
                 Toast.makeText(this,"User Logged In",Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
             }
             else
             {
                 Toast.makeText(this,"Unable to signin",Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
             }
         });
 
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toast.makeText(this,"Register Here",Toast.LENGTH_SHORT).show();
         Intent intent = new Intent (MainActivity.this, registration.class);
         startActivity(intent);
+        finish();
     }
 
     @Override
@@ -74,12 +77,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.login:
             user_id = (EditText)findViewById(R.id.user_id);
             user_password = (EditText)findViewById(R.id.user_password);
-            String email = user_id.getText().toString().trim();
+            String email = user_id.getText().toString().toLowerCase().trim();
             String password = user_password.getText().toString().trim();
             LOGIN(email,password);
             break;
             case R.id.reg:
                 register();
+                break;
+
         }
     }
 }
