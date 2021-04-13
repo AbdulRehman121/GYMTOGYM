@@ -54,8 +54,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this, task -> {
             if (task.isSuccessful())
             {
-                Toast.makeText(this,"User Logged In",Toast.LENGTH_SHORT).show();
+
                 progressDialog.dismiss();
+                Toast.makeText(this,"User Logged In",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent (MainActivity.this,User.class);
+                startActivity(intent);
+                finish();
             }
             else
             {
