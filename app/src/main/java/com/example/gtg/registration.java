@@ -38,6 +38,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         firebaseAuth= FirebaseAuth.getInstance();
+        getSupportActionBar().hide();
         SIGNUP = (Button)findViewById(R.id.Add);
         SIGNUP.setOnClickListener(this);
         token = (CheckBox)findViewById(R.id.condiion);
